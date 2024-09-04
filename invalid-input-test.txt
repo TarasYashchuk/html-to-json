@@ -1,0 +1,11 @@
+Input HTML:
+
+<body>
+    <h1>Title without closing tag
+    <p>Paragraph here
+    <img src="image.jpg">
+</body>
+
+Result: 
+An error message because the <h1> and <p> tag are not closed.
+

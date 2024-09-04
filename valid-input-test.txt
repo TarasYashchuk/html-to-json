@@ -1,0 +1,149 @@
+Input HTML:
+
+<div class="container">
+  <h1>Main Title</h1>
+  <div class="content">
+    <p>This is a <strong>bold</strong> statement.</p>
+    <p>This is another paragraph with a <a href="https://example.com">link</a>.</p>
+    <ul>
+      <li>First item</li>
+      <li>Second item with <em>italic</em> text</li>
+      <li>Third item</li>
+    </ul>
+  </div>
+</div>
+
+Result:
+
+{
+  "tagName": "body",
+  "attributes": {},
+  "children": [
+    {
+      "tagName": "div",
+      "attributes": {
+        "class": "container"
+      },
+      "children": [
+        {
+          "tagName": "h1",
+          "attributes": {},
+          "children": [
+            {
+              "type": "text",
+              "content": "Main Title"
+            }
+          ]
+        },
+        {
+          "tagName": "div",
+          "attributes": {
+            "class": "content"
+          },
+          "children": [
+            {
+              "tagName": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "type": "text",
+                  "content": "This is a "
+                },
+                {
+                  "tagName": "strong",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "text",
+                      "content": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": " statement."
+                }
+              ]
+            },
+            {
+              "tagName": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "type": "text",
+                  "content": "This is another paragraph with a "
+                },
+                {
+                  "tagName": "a",
+                  "attributes": {
+                    "href": "https://example.com"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "content": "link"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "tagName": "ul",
+              "attributes": {},
+              "children": [
+                {
+                  "tagName": "li",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "text",
+                      "content": "First item"
+                    }
+                  ]
+                },
+                {
+                  "tagName": "li",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "text",
+                      "content": "Second item with "
+                    },
+                    {
+                      "tagName": "em",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "type": "text",
+                          "content": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": " text"
+                    }
+                  ]
+                },
+                {
+                  "tagName": "li",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "text",
+                      "content": "Third item"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

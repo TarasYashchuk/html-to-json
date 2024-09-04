@@ -1,0 +1,51 @@
+Input HTML:
+
+<body>
+    <div class="container" id="main">
+        <p style="color: red;">This is a red paragraph.</p>
+        <a href="https://example.com" target="_blank">Visit Example.com</a>
+    </div>
+</body>
+
+Result:
+
+{
+  "tagName": "body",
+  "attributes": {},
+  "children": [
+    {
+      "tagName": "div",
+      "attributes": {
+        "class": "container",
+        "id": "main"
+      },
+      "children": [
+        {
+          "tagName": "p",
+          "attributes": {
+            "style": "color: red;"
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "This is a red paragraph."
+            }
+          ]
+        },
+        {
+          "tagName": "a",
+          "attributes": {
+            "href": "https://example.com",
+            "target": "_blank"
+          },
+          "children": [
+            {
+              "type": "text",
+              "content": "Visit Example.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
